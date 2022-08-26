@@ -273,7 +273,6 @@ nav ul li a:hover::after{
     text-align: center;
 }
 .employment-list div:hover{
-
     transform:translateY(-10px);
 }
    
