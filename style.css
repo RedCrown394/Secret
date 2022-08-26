@@ -114,11 +114,12 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li{
     list-style:none;
-    margin:10px0;
+    margin:10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
-    font-size:14px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
 }
 .tab-contents{
     display:none;
@@ -126,6 +127,122 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display:block;
 }
+#education span{
+    color: #ff004f;
+    font-size: 15px;
+    font-weight: 500;
+}
+#internship span{
+    color: #ff004f;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/*----------Progress bar-------*/
+.container .tab-contents .progress-line{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background: #050001;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgb(0, 0, 0, 0.5),
+                      0px 1px rgb(#080808); 
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.progress-line span{
+    height: 100%;
+    width: 80%;
+    margin-top: 1px;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.tab-contents .progress-line.vbnet span{
+    width: 85%;
+}
+.tab-contents .progress-line.mysql span{
+    width: 70%;
+}
+.tab-contents .progress-line.wordpress span{
+    width: 85%;
+}
+.tab-contents .progress-line.cplusplus span{
+    width: 75%;
+}
+.tab-contents .progress-line.c span{
+    width: 60%;
+}
+.tab-contents .progress-line.Java span{
+    width: 50%;
+}
+.tab-contents .progress-line.htmlcss span{
+    width: 70%;
+}
+
+.tab-contents .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -5px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #ff004f;
+    opacity: 0;
+    animation: showtText2 0.5s 1.5s linear forwards;
+}
+.tab-contents .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -18px;
+    background: #ff004f;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 1px 4px;
+    opacity: 0;
+    animation: showtText2 0.5s 1.5s linear forwards;
+}
+@keyframes showtText2{
+    100%{
+        opacity: 1;
+    }
+}
+.tab-contents .progress-line.vbnet span::after{
+    content: "90%";
+}
+.tab-contents .progress-line.mysql span::after{
+    content: "70%";
+}
+.tab-contents .progress-line.wordpress span::after{
+    content: "90%";
+}
+.tab-contents .progress-line.cplusplus span::after{
+    content: "75%";
+}
+.tab-contents .progress-line.c span::after{
+    content: "60%";
+}
+.tab-contents .progress-line.Java span::after{
+    content: "50%";
+}
+.tab-contents .progress-line.htmlcss span::after{
+    content: "70%";
+}
+
  /*-----------services-----------*/
  #services{
     padding: 30px 0;
