@@ -18,6 +18,14 @@ body{
 .container{
     padding: 10px 10%;
 }
+/*.navbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 65px;
+    background: rgb(0, 0, 0, 0.7)
+}*/
+
 nav{
     display: flex;
     align-items: center;
@@ -62,8 +70,13 @@ nav ul li a:hover::after{
  .header-text h1 span{
     color:#ff004f;
  }
+.moving-text span{
+    font-size: 32px;
+}
  /*-----------about-----------*/
  #about{
+    height: 100vh;
+    background-color: #262626;
     padding: 80px 0; 
     color: #ababab;
 }
@@ -245,6 +258,7 @@ nav ul li a:hover::after{
 
  /*-----------services-----------*/
  #employment{
+    height: 100vh;
     padding: 30px 0;
  }
  .employment-list{

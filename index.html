@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head> 
 <body>
     <div id="header">
         <div class="container">
-            <nav>
+            <nav class="navbar">
                 <img src="images/logo.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Works</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#employment">Employment History</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -23,6 +24,18 @@
                 <p>Junior Developer</p>
                 <h1>Hi, I'm <span>Renzo</span> E. Lim</h1>
             </div>
+            <div class="moving-text">
+                <p><span class="auto-type"></span></p>
+                           <script>
+                            var typed=new Typed(".auto-type",{
+                                strings:["Code", "Eat", "Sleep", "Repeat"],
+                                typeSpeed:100,
+                                backSpeed:400,
+                                loop:true
+                                }
+                                )
+                            </script>      
+                </div>
         </div>
     </div>
 <!--------------------About------------------>
@@ -129,5 +142,9 @@
          document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+ <!--------------------Smoothscroll------------->
+ <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+ <script src="main.js"></script>
+ <!--------------------Smoothscroll------------->
 </body>
 </html> 
