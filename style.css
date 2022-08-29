@@ -304,6 +304,21 @@ nav ul li a:hover::after{
 .employment-list p{
     text-align: center;
     font-size: 12px;
-    position: bottom;
     margin-bottom: 20px;
 }
+.view-image{
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: #ff004f;
+    background-color: #080808;
+    border-radius: 5px;
+}
+
+
+/*.container .employment{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}*/
