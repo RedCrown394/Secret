@@ -126,7 +126,6 @@ nav ul li a:hover::after{
     width: 50%;
 }
 .tab-contents ul li{
-    list-style:none;
     margin:10px 0;
 }
 .tab-contents ul li span{
@@ -142,14 +141,24 @@ nav ul li a:hover::after{
 }
 #education span{
     color: #ff004f;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
 }
 #internship span{
     color: #ff004f;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
 }
+#education ul li{
+    list-style: none;
+}
+#internship .internship{
+    list-style: none;
+}
+#skills li{
+    list-style: none;
+}
+
 
 
 /*----------Progress bar-------*/
