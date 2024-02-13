@@ -1,185 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://kit.fontawesome.com/dc801b9cb2.js" crossorigin="anonymous"></script>
-</head> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Secret</title>
+</head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav class="navbar">
-                <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#employment">Employment History</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Junior Developer</p>
-                <h1>Hi, I'm <span>Renzo E. Lim</span></h1>
-            </div>
-            <div class="moving-text">
-                <p><span class="auto-type"></span></p>
-                           <script>
-                            var typed=new Typed(".auto-type",{
-                                strings:["Code", "Eat", "Sleep", "Repeat"],
-                                typeSpeed:100,
-                                backSpeed:150,
-                                loop:true
-                                }
-                                )
-                            </script>      
-                </div>
-        </div>
-    </div>
-<!--------------------About------------------>
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/about.jpg" alt="">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Hardworking Fresh Graduate Student seeking employment. 
-                    Ready to utilize my skills and passion to further the mission of a company. 
-                    Bringing forth a positive attitude and the willingness and motivation to learn new things.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('internship')">Internship</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Vb.net</span></li>
-                            <div class="progress-line vbnet"><span></span></div>
-                            
-                            <li><span>Mysql</span></li>
-                            <div class="progress-line mysql"><span></span></div>
 
-                            <li><span>Wordpress</span></li>
-                            <div class="progress-line wordpress"><span></span></div>
-
-                            <li><span>C++</span></li>
-                            <div class="progress-line cplusplus"><span></span></div>
-
-                            <li><span>C</span></li>
-                            <div class="progress-line c"><span></span></div>
-
-                            <li><span>Java</span></li>
-                            <div class="progress-line Java"><span></span></div>
-
-                            <li><span>HTML & CSS</span></li>
-                            <div class="progress-line htmlcss"><span></span></div>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Dr. Emilio B. Espinosa Sr., Memorial State College of Agriculture and Technology(DEBESMSCAT), Masbate</span></li>
-                            <p>Bachelor of Science in Computer Science (2018-2022)</p>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="internship">
-                        <ul>
-                            <li class="internship"><span>Chief Executive Office(DEBESMSCAT)</span></li>
-                            <li>Utilized the latest software development tools, techniques, and approaches.</li>
-                            <li>Managed office space and office equipment.</li>
-
-                        </ul>
-                    </div>
-            </div>
-        </div>
-    </div>
+<div class="envelope">
+  
 </div>
 
-<!--------------------Employment History------------------>
-<div id="employment">
-    <div class="container">
-        <h1 class="sub-title">Employment History</h1>
-        <div class="employment-list">
-            <div>
-                <h2>Barista, <br> Receptionist</h2>
-                <p>Josie Miguel D. Bien <br> 2022-Present</p>
-                <ul>
-                    <li>Brought forth a strong ability for multitasking and prioritizing tasks.</li>
-                    <li>Answered phone calls, greeted clients, and handled all front desk responsibilities.</li>
-                    <li>Provided the highest level of customer service at every shift.</li>
-                    <li>Brought forth a genuine interest in food and beverages.</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Freelancer <br> (Wordpress Admin)</h2>
-                <p>Fr. Jomel Ian Dela Cruz <br> 2020-2022</p>
-                <ul>
-                    <li>Successfully identified, diagnosed, and fixed website problems, including broken links, typographical errors, and formatting issues.</li>
-                    <li>Remained knowledgeable in new standards, technologies, and trends in website development.</li>
-                    <li>Managed the gallery website and blog.</li>
-                    <li>Interfaced with clients to identify business requirements.</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Dental Assistant, <br> Receptionist</h2>
-                <p>Dra. Amelia Cleotilde B. Vargas <br> 2020-2021</p>
-                <ul>
-                    <li>Processed dental X-Rays and efficiently used other office equipment.</li>
-                    <li>Worked well independently and as part of a team.</li>
-                    <li>Followed directions given by dentist and functioned as a strong support.</li>
-                    <li>Remained compssionate and committed to patient satisfaction.</li>
-                </ul>
-            </div>
-        </div>
+<div class="card">
+  <div class="back"></div>
+  <div class="front">
+    <div class="f-box">
+      <img src="https://assets.codepen.io/4927073/ValCard.png" alt="Secret">
     </div>
-</div>
-<!--------------------Contacts------------------>
-<div id="contact">
-    <div class="container">
-       <div class="row">
-        <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p> <i class="fa-solid fa-at"></i>renzolim3@gmail.com</p>
-            <p> <i class="fa-solid fa-mobile-screen"></i> 09515696857</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/limrenzo/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://t.me/Redcrownnn"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-            <a href="#" class="btn download">Download CV</a>
-        </div>
-        <div class="contact-right">
-            <form>
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="text" name="Email" placeholder="'Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn submit">Submit</button>
-            </form>
-        </div>
-       </div>
-    </div>
+  </div>
+
+  <div class="text-container" id="textContainer">
+    <p id="cardText">
+      ...
+    </p>
+    <button onclick="changeText()">Next</button>
+  </div>
 </div>
 
+<script src="main.js"></script>
 
-<script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-         for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-         event.currentTarget.classList.add("active-link");
-         document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
- <!--------------------Smoothscroll------------->
- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
- <script src="main.js"></script>
- <!--------------------Smoothscroll------------->
 </body>
-</html> 
+</html>
